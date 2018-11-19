@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <style>
+        .box{
+            background-color: #54cbfc;
+        }
+        .box a{
+            height:30px;
+            line-height: 30px;
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        {{#each files}}
+        <a href="{{../dir}}/{{file}}">【{{icon}}】{{file}}</a>
+        {{/each}}
+    </div>
+</body>
+</html>
